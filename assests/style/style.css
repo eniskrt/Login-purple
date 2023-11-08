@@ -1,0 +1,121 @@
+:root{
+    --color1: #3CB8D9;
+    --color2: #5710B3;
+    --color3:aliceblue;
+    --color4: #FF5DBA;
+    --color5: #3b3b3b;
+    --color6:#BCBCBC;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,
+body{
+    height: 100%;
+    font-family: 'Inter', sans-serif;
+}
+body{
+    background-color: var(--color2);
+}
+.banner{
+    height: 50%;
+}
+.banner img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom left;
+}
+.login-form{
+    background-color: var(--color3);
+    display: inline-block;
+    padding: 40px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    position: absolute;
+    min-width: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+}
+@media (min-width:550px){
+    .login-form{
+        min-width: 500px;
+    }
+}
+.login-form .icon{
+    width: 90px;
+    height: 90px;
+    background-image:linear-gradient(90deg, var(--color2),var(--color4));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: var(--color3);
+    border-radius: 50%;
+    position: absolute;
+    top:0;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 3px solid var(--color3);
+    box-shadow: 0px -10px 15px var(--color5);
+}
+.login-form h2{
+    text-align: center;
+    margin: 15px 0;
+    color: var(--color1);
+}
+.login-form form{
+    font-size: 0.7rem;
+}
+.login-form input:not([type="checkbox"]){
+    display: block;
+    width: 100%;
+    border: none;
+    background-color:var(--color6) ;
+    padding: 10px 20px;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+}
+.login-form input:not([type="checkbox"]):focus{
+    outline: 2px solid var(--color4);
+}
+.login-form label{
+    color: var(--color5);
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.login-form .form-row{
+    margin-bottom: 10px;
+}
+.login-form button{
+    display: block;
+    width: 100%;
+    background-color: var(--color1);
+    color: var(--color3);
+    border: none;
+    padding: 12px 0;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+}
+.login-form .card-footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
